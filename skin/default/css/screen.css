@@ -1,0 +1,803 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*
+global var:
+*/
+/*
+public css:
+*/
+/* line 48, sass/screen.scss */
+html, body {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 54, sass/screen.scss */
+.vwcenter {
+  text-align: center;
+}
+
+/* line 55, sass/screen.scss */
+.center {
+  margin: 0 auto;
+}
+
+/* line 56, sass/screen.scss */
+.bold {
+  font-weight: bold;
+}
+
+/*
+line-height:
+*/
+/* line 60, sass/screen.scss */
+.lh06 {
+  line-height: 0.6rem;
+}
+
+/* line 61, sass/screen.scss */
+.lh1 {
+  line-height: 1rem;
+}
+
+/*
+font-size:
+*/
+/* line 65, sass/screen.scss */
+.f16 {
+  font-size: 16px;
+  /*
+      [data-dpr="3.5"] & {
+          font-size: $font-size * 3.5;
+      }
+     */
+}
+/* line 17, sass/screen.scss */
+[data-dpr="2"] .f16 {
+  font-size: 32px;
+}
+/* line 21, sass/screen.scss */
+[data-dpr="3"] .f16 {
+  font-size: 48px;
+}
+
+/* line 66, sass/screen.scss */
+.f24 {
+  font-size: 24px;
+  /*
+      [data-dpr="3.5"] & {
+          font-size: $font-size * 3.5;
+      }
+     */
+}
+/* line 17, sass/screen.scss */
+[data-dpr="2"] .f24 {
+  font-size: 48px;
+}
+/* line 21, sass/screen.scss */
+[data-dpr="3"] .f24 {
+  font-size: 72px;
+}
+
+/* line 67, sass/screen.scss */
+.f20 {
+  font-size: 20px;
+  /*
+      [data-dpr="3.5"] & {
+          font-size: $font-size * 3.5;
+      }
+     */
+}
+/* line 17, sass/screen.scss */
+[data-dpr="2"] .f20 {
+  font-size: 40px;
+}
+/* line 21, sass/screen.scss */
+[data-dpr="3"] .f20 {
+  font-size: 60px;
+}
+
+/*
+frame
+*/
+/* line 71, sass/screen.scss */
+.view {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+/*.scrollview{width: 100%; height: 100%;overflow: hidden;}*/
+/* line 74, sass/screen.scss */
+header {
+  width: 100%;
+  background: #da251c;
+}
+
+/* line 79, sass/screen.scss */
+.header-wrap {
+  margin: 0 auto;
+  width: 10rem;
+  height: 0.844444rem;
+  display: flex;
+  flex-direction: row;
+  padding: 0.266667rem 0;
+}
+
+/* line 88, sass/screen.scss */
+.back-wrap {
+  width: 2.026667rem;
+  height: 0.844444rem;
+}
+
+/* line 89, sass/screen.scss */
+.back-wrap .icon {
+  width: 0.755556rem;
+  height: 0.755556rem;
+  margin: 0.044444rem 0 0 0.657778rem;
+  background: url("../images/sprite.webp") -2.77333rem -1.17333rem;
+  background-size: 4.69333rem 2.79111rem;
+  background-repeat: no-repeat;
+}
+
+/* line 97, sass/screen.scss */
+.search-wrap {
+  width: 5.635556rem;
+  height: 0.844444rem;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+}
+
+/* line 99, sass/screen.scss */
+.search-wrap .input-wrap {
+  width: 4.773333rem;
+  height: 0.844444rem;
+}
+
+/* line 101, sass/screen.scss */
+.search-wrap .input-wrap .search-words {
+  width: 4.124444rem;
+  height: 0.844444rem;
+  margin-left: 0.106667rem;
+  border: 0;
+}
+
+/* line 104, sass/screen.scss */
+.search-wrap .btn-wrap {
+  width: 0.862222rem;
+  height: 0.844444rem;
+}
+
+/* line 107, sass/screen.scss */
+.search-wrap .btn-wrap .submit-btn {
+  width: 0.648889rem;
+  height: 0.64rem;
+  margin-top: 0.097778rem;
+  background: url("../images/sprite.webp") -3.52889rem -1.17333rem;
+  background-size: 4.69333rem 2.79111rem;
+  background-repeat: no-repeat;
+}
+
+/* line 112, sass/screen.scss */
+.search-wrap .btn-wrap .submit-btn input {
+  margin-top: 0.097778rem;
+  width: 0.64rem;
+  height: 0.64rem;
+}
+
+/* line 114, sass/screen.scss */
+.shopping-cart-wrap {
+  width: 2.337778rem;
+  height: 0.844444rem;
+}
+
+/* line 116, sass/screen.scss */
+.shopping-cart-wrap .cart {
+  width: 0.995556rem;
+  height: 0.755556rem;
+  margin-top: 0.044444rem;
+  margin-left: 0.666667rem;
+  background: url("../images/sprite.webp") -1.77778rem -1.17333rem;
+  background-size: 4.69333rem 2.79111rem;
+  background-repeat: no-repeat;
+}
+
+/* line 121, sass/screen.scss */
+.scroll-wrap {
+  width: 100%;
+  height: 100%;
+  display: block;
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 127, sass/screen.scss */
+.scroll-content {
+  width: 100%;
+}
+
+/* line 128, sass/screen.scss */
+.scroll-content .content {
+  width: 10rem;
+}
+
+/* line 130, sass/screen.scss */
+.banner-wrap {
+  width: 100%;
+}
+
+/* line 131, sass/screen.scss */
+.banner-wrap img {
+  width: 10rem;
+  height: 4.16rem;
+}
+
+/* line 133, sass/screen.scss */
+.t-entrance {
+  display: flex;
+  width: 10rem;
+}
+
+/* line 135, sass/screen.scss */
+.t-entrance .box {
+  box-sizing: border-box;
+  width: 2.497778rem;
+  padding: 0.204444rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 136, sass/screen.scss */
+.t-entrance .box .icon-wrap {
+  width: 1.173333rem;
+  height: 1.173333rem;
+  margin-left: 0.657778rem;
+}
+
+/* line 137, sass/screen.scss */
+.t-entrance .box .icon-category {
+  width: 1.173333rem;
+  height: 1.173333rem;
+  background: url("../images/sprite.webp") -3.52rem 0rem;
+  background-size: 4.69333rem 2.79111rem;
+  background-repeat: no-repeat;
+}
+
+/* line 138, sass/screen.scss */
+.t-entrance .box .icon-promotion {
+  width: 1.173333rem;
+  height: 1.173333rem;
+  background: url("../images/sprite.webp") 0 0rem;
+  background-size: 4.69333rem 2.79111rem;
+  background-repeat: no-repeat;
+}
+
+/* line 139, sass/screen.scss */
+.t-entrance .box .icon-integral {
+  width: 1.173333rem;
+  height: 1.173333rem;
+  background: url("../images/sprite.webp") -1.17333rem 0rem;
+  background-size: 4.69333rem 2.79111rem;
+  background-repeat: no-repeat;
+}
+
+/* line 140, sass/screen.scss */
+.t-entrance .box .icon-collection {
+  width: 1.173333rem;
+  height: 1.173333rem;
+  background: url("../images/sprite.webp") -2.34667rem 0rem;
+  background-size: 4.69333rem 2.79111rem;
+  background-repeat: no-repeat;
+}
+
+/* line 142, sass/screen.scss */
+.t-entrance .box .title {
+  width: 2.497778rem;
+  height: 0.311111rem;
+  margin: 0.266667rem 0;
+  line-height: 0.311111rem;
+  font-size: 12px;
+  /*
+      [data-dpr="3.5"] & {
+          font-size: $font-size * 3.5;
+      }
+     */
+  text-align: center;
+}
+/* line 17, sass/screen.scss */
+[data-dpr="2"] .t-entrance .box .title {
+  font-size: 24px;
+}
+/* line 21, sass/screen.scss */
+[data-dpr="3"] .t-entrance .box .title {
+  font-size: 36px;
+}
+
+/* line 144, sass/screen.scss */
+.category-box {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 0.017778rem solid #ccc;
+}
+
+/* line 145, sass/screen.scss */
+.category-box .item-box {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 5.0rem;
+  height: 1.777778rem;
+  padding-left: 0.506667rem;
+  padding-top: 0.311111rem;
+}
+
+/* line 146, sass/screen.scss */
+.category-box .item-box .img {
+  width: 1.564444rem;
+  height: 1.173333rem;
+}
+
+/* line 147, sass/screen.scss */
+.category-box .item-box .img img {
+  width: 1.564444rem;
+  height: 1.173333rem;
+}
+
+/* line 148, sass/screen.scss */
+.category-box .item-box .category {
+  line-height: 0.568889rem;
+  padding-left: 0.195556rem;
+  font-size: 14px;
+  /*
+      [data-dpr="3.5"] & {
+          font-size: $font-size * 3.5;
+      }
+     */
+  font-weight: bold;
+}
+/* line 17, sass/screen.scss */
+[data-dpr="2"] .category-box .item-box .category {
+  font-size: 28px;
+}
+/* line 21, sass/screen.scss */
+[data-dpr="3"] .category-box .item-box .category {
+  font-size: 42px;
+}
+
+/* line 149, sass/screen.scss */
+.category-box .item-box .category-sub {
+  line-height: 0.586667rem;
+  padding-left: 0.195556rem;
+  width: 2.72rem;
+  font-size: 12px;
+  /*
+      [data-dpr="3.5"] & {
+          font-size: $font-size * 3.5;
+      }
+     */
+  font-weight: bold;
+}
+/* line 17, sass/screen.scss */
+[data-dpr="2"] .category-box .item-box .category-sub {
+  font-size: 24px;
+}
+/* line 21, sass/screen.scss */
+[data-dpr="3"] .category-box .item-box .category-sub {
+  font-size: 36px;
+}
+
+/* line 151, sass/screen.scss */
+.seckill {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 152, sass/screen.scss */
+.seckill .title-bar {
+  width: 10rem;
+  height: 1.244444rem;
+  background: #e3556b;
+}
+
+/* line 153, sass/screen.scss */
+.seckill .title-bar .icon {
+  float: left;
+  width: 0.888889rem;
+  height: 0.888889rem;
+  margin-top: 0.177778rem;
+  margin-left: 0.222222rem;
+  background: url("../images/sprite.webp") 0 -1.17333rem;
+  background-size: 4.69333rem 2.79111rem;
+  background-repeat: no-repeat;
+}
+
+/* line 154, sass/screen.scss */
+.seckill .title-bar .title {
+  float: left;
+  color: #fff;
+  line-height: 1.244444rem;
+  margin-left: 0.177778rem;
+  font-size: 16px;
+  /*
+      [data-dpr="3.5"] & {
+          font-size: $font-size * 3.5;
+      }
+     */
+}
+/* line 17, sass/screen.scss */
+[data-dpr="2"] .seckill .title-bar .title {
+  font-size: 32px;
+}
+/* line 21, sass/screen.scss */
+[data-dpr="3"] .seckill .title-bar .title {
+  font-size: 48px;
+}
+
+/* line 155, sass/screen.scss */
+.seckill .title-bar .more {
+  float: right;
+  line-height: 1.244444rem;
+  color: #fff;
+  margin-right: 0.266667rem;
+  font-size: 16px;
+  /*
+      [data-dpr="3.5"] & {
+          font-size: $font-size * 3.5;
+      }
+     */
+}
+/* line 17, sass/screen.scss */
+[data-dpr="2"] .seckill .title-bar .more {
+  font-size: 32px;
+}
+/* line 21, sass/screen.scss */
+[data-dpr="3"] .seckill .title-bar .more {
+  font-size: 48px;
+}
+
+/* line 157, sass/screen.scss */
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  width: 10rem;
+  background-image: url("../images/split.gif");
+  background-position: 0 0;
+  background-size: 10rem 0.08889rem;
+  background-repeat: repeat-y;
+}
+
+/* line 158, sass/screen.scss */
+.pro-box {
+  width: 5.0rem;
+  height: 5.777778rem;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.026667rem solid #ccc;
+}
+
+/* line 159, sass/screen.scss */
+.pro-box .img {
+  width: 4.0rem;
+  height: 4.0rem;
+  padding: 0.373333rem 0.5rem 0.32rem 0.5rem;
+}
+
+/* line 160, sass/screen.scss */
+.pro-box .img img {
+  width: 4.0rem;
+  height: 4.0rem;
+}
+
+/* line 162, sass/screen.scss */
+.pro-box .title {
+  width: 4.0rem;
+  height: 0.32rem;
+  line-height: 0.32rem;
+  padding: 0 0.5rem;
+  text-align: center;
+  color: #4871b4;
+}
+
+/* line 163, sass/screen.scss */
+.pro-box .price {
+  width: 4.0rem;
+  height: 0.586667rem;
+  line-height: 0.586667rem;
+  padding: 0 0.5rem;
+}
+
+/* line 164, sass/screen.scss */
+.pro-box .price .sale {
+  color: #f00;
+}
+
+/* line 165, sass/screen.scss */
+.pro-box .price .promotion {
+  color: #666;
+  text-decoration: line-through;
+}
+
+/* line 167, sass/screen.scss */
+.recommend {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 168, sass/screen.scss */
+.recommend .title-bar {
+  width: 10rem;
+  height: 1.244444rem;
+  background: #e25391;
+}
+
+/* line 169, sass/screen.scss */
+.recommend .title-bar .icon {
+  float: left;
+  width: 0.888889rem;
+  height: 0.888889rem;
+  margin-top: 0.177778rem;
+  margin-left: 0.222222rem;
+  background: url("../images/sprite.webp") -0.88889rem -1.17333rem;
+  background-size: 4.69333rem 2.79111rem;
+  background-repeat: no-repeat;
+}
+
+/* line 170, sass/screen.scss */
+.recommend .title-bar .title {
+  float: left;
+  color: #fff;
+  line-height: 1.244444rem;
+  margin-left: 0.177778rem;
+  font-size: 16px;
+  /*
+      [data-dpr="3.5"] & {
+          font-size: $font-size * 3.5;
+      }
+     */
+}
+/* line 17, sass/screen.scss */
+[data-dpr="2"] .recommend .title-bar .title {
+  font-size: 32px;
+}
+/* line 21, sass/screen.scss */
+[data-dpr="3"] .recommend .title-bar .title {
+  font-size: 48px;
+}
+
+/* line 171, sass/screen.scss */
+.recommend .title-bar .more {
+  float: right;
+  line-height: 1.244444rem;
+  color: #fff;
+  margin-right: 0.266667rem;
+  font-size: 16px;
+  /*
+      [data-dpr="3.5"] & {
+          font-size: $font-size * 3.5;
+      }
+     */
+}
+/* line 17, sass/screen.scss */
+[data-dpr="2"] .recommend .title-bar .more {
+  font-size: 32px;
+}
+/* line 21, sass/screen.scss */
+[data-dpr="3"] .recommend .title-bar .more {
+  font-size: 48px;
+}
+
+/* line 174, sass/screen.scss */
+.com-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 175, sass/screen.scss */
+.com-box .title-bar {
+  width: 10rem;
+  height: 1.244444rem;
+}
+
+/* line 176, sass/screen.scss */
+.com-box .title-bar .icon {
+  float: left;
+  width: 0.888889rem;
+  height: 0.888889rem;
+  margin-top: 0.177778rem;
+  margin-left: 0.222222rem;
+  background: url("../images/sprite.webp") -0.88889rem -1.17333rem;
+  background-size: 4.69333rem 2.79111rem;
+  background-repeat: no-repeat;
+}
+
+/* line 177, sass/screen.scss */
+.com-box .title-bar .title {
+  float: left;
+  line-height: 1.244444rem;
+  margin-left: 0.177778rem;
+  font-size: 16px;
+  /*
+      [data-dpr="3.5"] & {
+          font-size: $font-size * 3.5;
+      }
+     */
+}
+/* line 17, sass/screen.scss */
+[data-dpr="2"] .com-box .title-bar .title {
+  font-size: 32px;
+}
+/* line 21, sass/screen.scss */
+[data-dpr="3"] .com-box .title-bar .title {
+  font-size: 48px;
+}
+
+/* line 178, sass/screen.scss */
+.com-box .title-bar .more {
+  float: right;
+  line-height: 1.244444rem;
+  margin-right: 0.266667rem;
+  font-size: 16px;
+  /*
+      [data-dpr="3.5"] & {
+          font-size: $font-size * 3.5;
+      }
+     */
+}
+/* line 17, sass/screen.scss */
+[data-dpr="2"] .com-box .title-bar .more {
+  font-size: 32px;
+}
+/* line 21, sass/screen.scss */
+[data-dpr="3"] .com-box .title-bar .more {
+  font-size: 48px;
+}
+
+/* line 179, sass/screen.scss */
+.cf7c6db {
+  background: #f7c6db;
+}
+
+/* line 180, sass/screen.scss */
+.cb2def7 {
+  background: #b2def7;
+}
+
+/* line 182, sass/screen.scss */
+.bottom-fixed {
+  width: 100%;
+  border-top: 0.026667rem solid #ccc;
+}
+
+/* line 186, sass/screen.scss */
+.bottom-wrap {
+  display: flex;
+}
+
+/* line 187, sass/screen.scss */
+.bottom-wrap .box {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 2.5rem;
+  height: 1.288889rem;
+  padding-top: 0.16rem;
+}
+
+/* line 188, sass/screen.scss */
+.bottom-wrap .box .icon {
+  margin-left: 0.885556rem;
+  width: 0.728889rem;
+  height: 0.728889rem;
+}
+
+/* line 189, sass/screen.scss */
+.bottom-wrap .box .title {
+  text-align: center;
+}
+
+/* line 190, sass/screen.scss */
+.bottom-wrap .box .icon0 {
+  background: url("../images/sprite.webp") 0 -2.06222rem;
+  background-size: 4.69333rem 2.79111rem;
+  background-repeat: no-repeat;
+}
+
+/* line 191, sass/screen.scss */
+.bottom-wrap .box .icon1 {
+  background: url("../images/sprite.webp") -0.72889rem -2.06222rem;
+  background-size: 4.69333rem 2.79111rem;
+  background-repeat: no-repeat;
+}
+
+/* line 192, sass/screen.scss */
+.bottom-wrap .box .icon2 {
+  background: url("../images/sprite.webp") -1.45778rem -2.06222rem;
+  background-size: 4.69333rem 2.79111rem;
+  background-repeat: no-repeat;
+}
+
+/* line 193, sass/screen.scss */
+.bottom-wrap .box .icon3 {
+  background: url("../images/sprite.webp") -2.18667rem -2.06222rem;
+  background-size: 4.69333rem 2.79111rem;
+  background-repeat: no-repeat;
+}
+
+/* line 195, sass/screen.scss */
+.islazy {
+  width: 5rem;
+  height: 6.666667rem;
+}
